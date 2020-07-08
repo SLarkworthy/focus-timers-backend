@@ -1,0 +1,2 @@
+class ActivityTimersController < ApplicationController
+end
