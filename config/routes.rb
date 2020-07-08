@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :activity_timers
-  resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      resources :activity_timers
+      resources :users
+    end
+  end
 end
